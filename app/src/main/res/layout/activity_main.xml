@@ -1,85 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.programas.viris.veterinaria_master.MainActivity">
+    android:background="@mipmap/logo2"
+    tools:context="net.programas.viris.veterinaria_master.login">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bienvenido"
-                android:textSize="45dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-            <TextView
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Inicia sesión"
-                android:textSize="25dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            />
 
-            <EditText
-                android:id="@+id/MainActivityTxtUsuario"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Usuario"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-            <EditText
-                android:id="@+id/MainActivityTxtContrasenia"
-                android:hint="Contraseña"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="bottom|center">
-            <Button
-                android:id="@+id/MainActivityBtnEntrar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Entrar"/>
-        </LinearLayout>
+        <Button
+            android:id="@+id/activity_main_btnInicio"
+            android:layout_width="290dp"
+            android:layout_height="380dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:onClick="btnInicio" />
     </LinearLayout>
 </ScrollView>

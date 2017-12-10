@@ -5,36 +5,35 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+
 
 public class MainActivity extends AppCompatActivity {
-    EditText txtUsuario, txtContrasenia;
-    Button btnIniciar;
-    Intent cargar;
+    Button btnInicio;
+    Intent ir;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initializar();
+        accionesBoton();
+    }
+    private void initializar(){
+        btnInicio = (Button) findViewById(R.id.activity_main_btnInicio);
+    }
 
-        inicializaComponentes();
-
-        btnIniciar.setOnClickListener(
+    private void accionesBoton() {
+        btnInicio.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
-                    public void onClick(View view) {
-                        cargaInicio();
+                    public void onClick(View v) {
+                        PaginaInicio();
                     }
                 }
         );
     }
-    private void cargaInicio() {
-        cargar = new Intent(this, Principal.class);
-        this.startActivity(cargar);
-    }
 
-    private void inicializaComponentes() {
-        txtUsuario=(EditText) findViewById(R.id.MainActivityTxtUsuario);
-        txtContrasenia=(EditText) findViewById(R.id.MainActivityTxtContrasenia);
-        btnIniciar=(Button) findViewById(R.id.MainActivityBtnEntrar);
+    public void PaginaInicio() {
+        ir = new Intent(this, login.class);
+        this.startActivity(ir);
     }
 }
