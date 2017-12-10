@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class Clientes extends AppCompatActivity{
     ListView listView;
-    ArrayList<Cliente> lista;
+    ArrayList<Clientes> lista;
     ImageButton btnMas;
     Intent cargar;
     @Override
@@ -20,7 +20,7 @@ public class Clientes extends AppCompatActivity{
         setContentView(R.layout.activity_clientes);
         listView = (ListView) findViewById(R.id.listView);
 
-        lista = new ArrayList<Cliente>();
+        lista = new ArrayList<Clientes>();
 
         btnMas = (ImageButton) findViewById(R.id.principalClientesAdd);
 

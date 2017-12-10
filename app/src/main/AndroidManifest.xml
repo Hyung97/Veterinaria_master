@@ -21,7 +21,11 @@
         <activity android:name=".Clientes" />
         <activity android:name=".Registro_Cliente" />
         <activity android:name=".Registro_Mascota" />
-        <activity android:name=".test.Registro_historial"></activity>
+        <activity android:name=".test.Registro_historial" />
+        <activity android:name=".Mascotas" />
+        <activity android:name=".Medicos" />
+        <activity android:name=".Registro_doctores" />
+        <activity android:name=".Servicios"></activity>
     </application>
 
 </manifest>
